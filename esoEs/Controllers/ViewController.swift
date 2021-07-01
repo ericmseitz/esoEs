@@ -18,12 +18,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let manager = CLLocationManager()
         manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         manager.distanceFilter = kCLDistanceFilterNone
+        manager.requestAlwaysAuthorization()
         return manager
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        self.locationManager.startUpdatingLocation()
+        self.mapView.showsUserLocation = true
+        
     }
 
 
