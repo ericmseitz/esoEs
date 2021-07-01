@@ -58,9 +58,9 @@
 		9299069F268E367000C4A1A0 /* esoEs */ = {
 			isa = PBXGroup;
 			children = (
+				929906B7268E39F700C4A1A0 /* Controllers */,
 				929906A0268E367000C4A1A0 /* AppDelegate.swift */,
 				929906A2268E367000C4A1A0 /* SceneDelegate.swift */,
-				929906A4268E367000C4A1A0 /* ViewController.swift */,
 				929906A6268E367000C4A1A0 /* Main.storyboard */,
 				929906AC268E367E00C4A1A0 /* Assets.xcassets */,
 				929906AE268E367E00C4A1A0 /* LaunchScreen.storyboard */,
@@ -68,6 +68,14 @@
 				929906A9268E367000C4A1A0 /* esoEs.xcdatamodeld */,
 			);
 			path = esoEs;
+			sourceTree = "<group>";
+		};
+		929906B7268E39F700C4A1A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				929906A4268E367000C4A1A0 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.progressbyproject.doneList.esoEs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.progressbyproject.doneList.esoEs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
