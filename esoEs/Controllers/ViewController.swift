@@ -30,6 +30,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.mapView.showsUserLocation = true
         
     }
+    
+    @IBAction func addFloodButtonPressed() {
+        
+        guard let location = self.locationManager.location else {
+            return
+        }
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = "Miche"
+        annotation.subtitle = "Reported on 07/02/2021"
+        annotation.coordinate = location.coordinate
+        
+        self.mapView.addAnnotation(annotation)
+        
+    }
 
 
 }
