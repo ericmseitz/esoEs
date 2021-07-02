@@ -1,0 +1,6 @@
+framework module Pods_esoEs {
+  umbrella header "Pods-esoEs-umbrella.h"
+
+  export *
+  module * { export * }
+}
